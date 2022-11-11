@@ -42,9 +42,8 @@ The plan identifies the items to be tested, the features to be tested, the types
 * roles needed for the project are allocated
 * functional specifications are defined
 * initial project risks were detected and mitigated
-* The environment is up and running
 * Role and permissions are allocated
-* User created
+
 
 #### 1.1.3 Exit criteria defined
 
@@ -53,14 +52,13 @@ The plan identifies the items to be tested, the features to be tested, the types
 * all resolved bugs have been re-tested and approved by the QA team
 * deadline was reached
 * no detected major risk remained un-mitigated
-* exploratory regression testing must be performed on the My Info module, which includes the "Personal details" and "Attachments" sections.
 
 
 #### 1.1.4 Test scope
 
-__Tests in scope:__  All the features of the "Personal details" and "Attachments" sections which were defined in software requirement specifications need to be tested: functional testing and GUI testing. 
+__Tests in scope:__  All the features of the "Personal details" and "Attachments" sections which were defined in software requirement specifications need to be tested: functional testing and GUI testing, compatibility testing with multiple browsers.
 
-__Tests not in scope:__ Performance Testing, stress testing, Volume Testing, compatibility testing with multiple browsers, mobile testing ,functional Testing using White-box Testing Tehniques,integrations of the dependents module with other modules. 
+__Tests not in scope:__ Performance Testing, stress testing, Volume Testing, mobile testing ,functional Testing using White-box Testing Tehniques,integrations of the dependents module with other modules. 
 
 #### 1.1.5 Risks detected
 
@@ -71,7 +69,7 @@ __Tests not in scope:__ Performance Testing, stress testing, Volume Testing, com
 
 #### 1.1.6 Evaluating entry criteria
 
-The entry criterias defined in the Test Planning phase have been achieved and the test process can continue. 
+The entry criteria defined in the Test Planning phase have been achieved and the test process can continue. 
 
 ## 1.2 Test Monitoring and Control
 
@@ -83,13 +81,13 @@ It will be done by generating periodic reports that reflect the current status o
 The testing process will be executed based on the above requirements for the "Personal details" and "Attachments" sections. The following test conditions were found:
 
 * Enter data only for mandatory fields and check that the employee profile is updated;
-* Leave mandatory fields empty and check that the dependant cannot be updated;
+* Leave mandatory fields empty and check that the dependent cannot be updated;
 * Enter data for all available fields and check that the employee profile is updated;
-* Updating a employee profile picture;
-* Adding an attachment or multiple attachmets;
-* Checking the correct operation of "Add", "Save", "Delete", "Edit", "Cancel" buttons;
-* Checking all text fields;
-* Checking all check boxes;
+* Updating an employee profile picture with the right size and format;
+* Adding an attachment and multiple attachmets;
+* Checking the correct operation of "Save" button on "Personal details section" and "Add", "Save", "Delete", "Edit", "Cancel" buttons on "Attachments" section;
+* Checking all text fields with both valid and invalid values (positive and negative testing);
+* Checking all check boxes functionality;
 * Check all validation constraints for the fields.
 
 
@@ -106,8 +104,6 @@ The test cases with steps can be viewed here: [Test cases+Steps](https://github.
 
 The following elements are needed to be ready before the test execution phase begins:
 
-* The following elements are needed to be ready before the test execution phase begins:
-
 * Testing environment is up and running: https://opensource-demo.orangehrmlive.com/
 * Access to the testing environment is given: Username : Admin | Password : admin123
 * Cycle summary was created
@@ -116,7 +112,7 @@ The following elements are needed to be ready before the test execution phase be
 ## 1.6 Test Execution
 
 * Test cases are executed on the created test Cycle summary: [Run test for personal details section:](https://github.com/madalinagherghel/manual_testing_portofolio/blob/main/Final%20Project/cycle_summary_execution.pdf)
-* Bugs have been created based on the failed tests. The complete bug reports can be found here: [created_bugs.pdf](https://github.com/madalinagherghel/manual_testing_portofolio/blob/main/Final%20Project/all_bugs.pdf)]()
+* Bugs have been created based on the failed tests. The complete bug reports can be found here: [created_bugs.pdf](https://github.com/madalinagherghel/manual_testing_portofolio/blob/main/Final%20Project/all_bugs.pdf)
     *  "SSN number" field can be inputted with more than 9 digits
     *  "License Expiry Date" can be inputted with a date in the past
     *  "Personal details" section is not displayed in the "My info" section
@@ -124,13 +120,13 @@ The following elements are needed to be ready before the test execution phase be
     *  "SSN number", "SIN number" fields can be inputted with letters
     *  "SSN number" field can be inputted with wrong format
     *  "Date of birth" field can be inputted with a date in the future
-    *   
+      
  Full regression testing is needed after the bugs are fixed
 
 
 ## 1.7 Test Completion
 
-* Exit criteria was evaluated and passed
+* Exit criteria were evaluated and passed
 * The traceability matrix was generated and can be found here: [Traceability_matrix.csv](https://github.com/madalinagherghel/manual_testing_portofolio/blob/main/Final%20Project/traceability_matrix.xlsx)
 * Test execution chart was generated, the final report shows that a number 11 tests have failed of a total of 59
 * A number of 59 test cases were planned for execution and all of them were executed
